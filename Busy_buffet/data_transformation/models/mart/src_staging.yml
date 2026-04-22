@@ -1,0 +1,8 @@
+version: 2
+
+sources:
+  - name: staging      # ชื่อที่ใช้ใน {{ source('staging', ...) }}
+    database: test     # ชื่อ Database จริงใน SQL Server
+    schema: staging    # ชื่อ Schema จริงใน SQL Server
+    tables:
+      - name: fact_queue

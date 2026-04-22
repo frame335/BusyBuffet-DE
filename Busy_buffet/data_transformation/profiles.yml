@@ -1,0 +1,12 @@
+DBT:
+  outputs:
+    dev:
+      type: sqlserver
+      driver: 'ODBC Driver 17 for SQL Server'
+      host: '<server_name>'
+      database: <database_name> # ลองใช้ master ทดสอบก่อน หรือเปลี่ยนเป็นชื่อ DB ของคุณ
+      schema: <schema_name>
+      threads: 2
+      trusted_connection: yes
+      trust_cert: yes
+  target: dev
